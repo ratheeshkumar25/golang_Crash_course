@@ -1,0 +1,20 @@
+Interface :-interfaces in Go are considered a data type but with a very specific purpose. They are used to define a set of method signatures that a type must implement
+declaring interface using type keyword
+
+What is an Interface in Go?
+Definition: An interface is a way to define a list of methods that a type (like a struct) must have.
+
+Purpose: Interfaces allow us to write flexible code that works with different types, as long as those types implement the required methods.
+
+
+
+Key Characteristics of Interfaces:
+Abstract Type:
+Interfaces don't store data directly like composite types (e.g., structs or slices) but instead allow different types to be treated uniformly if they implement the interface.
+
+Dynamic Behavior:
+An interface can hold values of any type that implements its methods.
+
+Implicit Implementation:
+In Go, a type satisfies an interface if it implements all its methods. There is no need for explicit declarations like implements in other languages.
+
