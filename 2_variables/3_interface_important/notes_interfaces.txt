@@ -17,4 +17,3 @@ An interface can hold values of any type that implements its methods.
 
 Implicit Implementation:
 In Go, a type satisfies an interface if it implements all its methods. There is no need for explicit declarations like implements in other languages.
-
