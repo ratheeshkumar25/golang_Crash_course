@@ -3,10 +3,11 @@ package di
 import "github.com/ratheeshkumar25/prototype/publisher"
 
 func Init() {
-	publisher := publisher.MyPublish{}
-	hello := "welcome to prototype pattern"
+	publishers := publisher.NewPublisher()
+	run(publishers, "Hi Welcome to prototype pattern")
+	publisher2 := publishers.Clone().(publisher.IPublisher)
+	run(publisher2, "exits")
 
-	run(&publisher, hello)
 }
 
 func run(publisher publisher.IPublisher, message string) {
